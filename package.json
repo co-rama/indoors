@@ -1,0 +1,26 @@
+{
+  "name": "indoors",
+  "version": "1.0.0",
+  "description": "A Clothing Line",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/co-rama/indoors.git"
+  },
+  "author": "Corama Yunus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/co-rama/indoors/issues"
+  },
+  "homepage": "https://github.com/co-rama/indoors#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7",
+    "nodemon": "^2.0.2"
+  }
+}
