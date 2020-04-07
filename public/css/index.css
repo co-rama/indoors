@@ -1,0 +1,202 @@
+/*
+**STYLE SPECIFICALLY FOR HOME PAGE
+*/
+/*GENERAL STYLE  */
+a{
+    color: #0071dc;
+}
+/* FLEX NAV TOP*/
+#top-menu{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 80px;
+    /* position: fixed; */
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+#top-menu #company-logo, #search-form, #menu-navigation{
+    padding: 15px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    /* border: black 1px solid; */
+}
+
+#company-logo{
+    flex: 1;
+    order: 1;
+}
+#search-form{
+    flex: 3;
+    order: 2;
+
+}
+#menu-navigation{
+    flex: 2;
+    order: 3;
+}
+/* COMPANY LOGO */
+#logo{
+    height: 100%;
+    width: 100%;
+    padding: 0 30px;
+}
+#logo i, img{ 
+    margin: 0;
+    display: inline-block;
+    color: #0071dc;
+}
+#logo h5{
+    letter-spacing: 8px;
+    margin: 0;
+    display: inline-block;
+    color: #0071dc;
+}
+
+/* SEARCH INPUTS */
+#search-form form{
+    width: 100%;
+    /* border: red 1px solid; */
+}
+
+#search-form form input{
+    margin: 0;
+    padding: 10px;
+    border: #0071dc solid 1.5px;
+    height: 100%;
+    outline: none;
+}
+
+#search-form form input[type=text]{
+    width: 84%; 
+    padding-left: 40px;
+    border-radius: 25px 0 0 25px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    width: 15%;
+    position: relative;
+    left: -5px;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+    background: #0071dc ;
+    color: #ffffff;
+}
+
+/* MENU NAVIGATION */
+#menu-navigation ul{
+    height: 100%;
+    padding: 10px;
+}
+#menu-navigation ul li{
+    padding: 5px;
+    display: inline-block;
+    height: 100%;
+    margin-right: 5px;
+}
+
+/* PROMOTION grids */
+#promotion{
+    display: grid;
+    border: solid 1px red;
+    height: 500px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 50px 450px 450px 450px;
+}
+
+#promotion #top-navigation, #categories, #slideshow, #promo-ads{
+    padding: 15px;
+}
+
+#top-navigation{
+    grid-column: 1/5;
+    grid-row: 1;
+    /* border: solid black 1px; */
+}
+#categories{
+    grid-column: 1;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2)
+}
+#slideshow{
+    grid-column: 2/4;
+    border: solid black 1px;
+    position: relative;
+}
+#promo-ads{
+    grid-column: 4;
+}
+/* grid nav */
+#top-navigation ul{
+    width: 35%;
+    margin: 0 auto;
+    font-size: medium;
+}
+#top-navigation ul li{
+    padding: 0 10px;
+    display: inline-block;
+}
+/* Grid categories */
+.title-categories{
+    letter-spacing: 3px;
+    width: 60%;
+    margin: 0 auto;
+}
+#categories ul{
+    margin: 0 auto;
+    width: 60%; 
+    padding: 0 5px;
+}
+#categories ul li{
+    padding: 5px 0;
+    width: 100%;
+}
+
+/* Slideshow */
+#slideshow img{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+#slideshow a{
+    position: absolute;
+    top: 50%;
+    /* color: black; */
+    transition: 0.6s ease;
+    user-select: none;
+}
+#next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+#prev{
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+/* MEDIA DEVICE flex*/
+@media(max-width: 768px){
+    #company-logo{
+        flex-basis: 100%;
+        order: 1;
+    }
+    #search-form{
+        flex-basis: 100%;
+        order: 3;
+        display: none;
+    }
+    #menu-navigation{
+        flex-basis: 100%;
+        order: 2;
+    }
+
+}
