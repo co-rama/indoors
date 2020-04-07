@@ -3,13 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e383af7a44.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <title></title>
 </head>
 <body>
-    <h4>This is home</h4>
+    <div id="top-menu">
+        <div id="company-logo">
+            <div id="logo">
+                <!-- <img src="" alt="Indoors logo"> -->
+                <i class='fas fa-tshirt'></i>
+                <h5 class="title"></h5>
+            </div>
+        </div>
+        <div id="search-form">
+            <form action="" method="GET">
+                <input type="text" name="search_query" id="seach-query" placeholder="Search..">
+                <input type="submit" name="search" value="Search">
+            </form>
+        </div>
+        <div id="menu-navigation">
+            <ul>
+                <li id="sign-in"><i class="fas fa-user"></i> Sign In</li>
+                <li id="orders"><i class="fas fa-briefcase"></i> Orders</li>
+                <li id="message"> <i class="fas fa-comment-dots"></i> Message</li>
+                <li id="cart"><i class="fas fa-cart-plus"></i> Cart</li>
+            </ul>
+        </div>
+    </div>
+    <div id="promotion">
+        <div id="top-navigation">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Fashion</a></li>
+                <li><a href="">Health & Beauty</a></li>
+                <li><a href="">Electronics</a></li>
+            </ul>
+            <hr>
+        </div>
+        <div id="categories">
+            <h5 class="title-categories"></h5>
+            <hr>
+            <ul>
+                <li><a href="">Phones</a></li>
+                <li><a href="">Clothing</a></li>
+                <li><a href="">Shoes</a></li>
+                <li><a href="">Laggage & Bags</a></li>
+                <li><a href="">Watches & Jewellery</a></li>
+                <li><a href="">Beauty</a></li>
+                <li><a href="">Wholesale</a></li>
+            </ul>
+        </div>
+        <div id="slideshow">
+            <img src="images/3.jpg" alt="slideshow" id="slideshow-image">
+            <a href="" id="prev">&#10094;</a>
+            <a href="" id="next">&#10095;</a>
+        </div>
+        <div id="promo-ads">
+            <p class="ads">This is section for promo</p>   
+            <p class="ads">This is section for promo</p> 
+            <p class="ads">This is section for promo</p> 
+            <p class="ads">This is section for promo</p>     
+        </div>
+    </div>
+    <script src="javascript/allJs.js"></script>
     <script src="javascript/index.js"></script>
 </body>
 </html>
