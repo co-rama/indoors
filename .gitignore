@@ -3,3 +3,6 @@ node*
 
 # Package -lock
 package-lock*
+
+# Ignored Images
+public/images
