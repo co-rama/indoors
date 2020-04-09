@@ -22,6 +22,9 @@ app.use(express.json());
 const indexPage = require('./routes/index');
 app.use('/', indexPage);
 
+const trendingPage = require('./routes/trending');
+app.use('/', trendingPage);
+
 const PORT = 3000 || process.env.PORT;
 app.listen(PORT, ()=>{
     console.log('Server up and running');
