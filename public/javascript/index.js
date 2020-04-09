@@ -1,11 +1,15 @@
-// Slideshow 
+// Slideshow
 var imageDB = {
-    image : ['1', '2', '3', '4'],
+    image : ['man', 'leathershoe', 'couple', 'simple', 'watch', 'silver'],
     slideIndex : 0
 };
+const path = '../images/';
+const jpg = '.jpg';
 
-document.querySelector('#prev').addEventListener('click', slidePrev);
+document.querySelector("#prev").addEventListener('click', slidePrev);
 document.querySelector('#next').addEventListener('click', slideNext);
+
+
 
 function slidePrev(){
     const prev = -1;
@@ -15,27 +19,42 @@ function slidePrev(){
 
 function slideNext(){
     const next = 1;
-    console.log('Hello');
     showSlides(next);
 
 }
 
 function showSlides(slideNumber){
-    let slideImage = document.querySelector("#slideshow-image");
+    var slideImage = document.querySelector("#slideshow-image");
     imageDB.slideIndex += slideNumber;
-    let path = '../images/'
-    console.log(imageDB.slideIndex);
-    console.log(path);
-    console.log(slideImage);
-
     if(imageDB.slideIndex >= imageDB.image.length){
         imageDB.slideIndex = 0;
-        slideImage.src = path + `${imageDB.image[imageDB.slideIndex]}.png`;
-    }else{
-        slideImage.src = path + imageDB.image[imageDB.slideIndex] + '.png';
-        console.log(slideImage.src);
+        slideImage.src = path + `${imageDB.image[imageDB.slideIndex]}.jpg`;
+    }else if(imageDB.slideIndex < 0){
+        imageDB.slideIndex = (imageDB.image.length - 1);
+        slideImage.src = path + `${imageDB.image[imageDB.slideIndex]}.jpg`;   
+    }
+    else{
+        slideImage.src = path + imageDB.image[imageDB.slideIndex] + '.jpg';
     }
 }
-function log(){
-    console.log('I work');
+
+// setInterval(()=>{
+//     slideNext();
+// }, 5000)
+
+/*
+**FLEEK IMAGES
+*/
+function fleekImage(){
+    var fleekSectionDiv = document.getElementById('fleek-section');
+    for(let i = 0; i < imageDB.image.length; i++){
+        var fleek = document.createElement('div');
+        var image = document.createElement('img');  
+        fleek.setAttribute('class', 'fleeks');
+        image.setAttribute('src', path + imageDB.image[i] + jpg);
+        fleek.appendChild(image);
+        fleekSectionDiv.appendChild(fleek);
+    }
 }
+
+fleekImage();
