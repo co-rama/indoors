@@ -2,9 +2,7 @@
 **STYLE SPECIFICALLY FOR HOME PAGE
 */
 /*GENERAL STYLE  */
-a{
-    color: #0071dc;
-}
+
 /* FLEX NAV TOP*/
 #top-menu{
     width: 100%;
@@ -12,9 +10,10 @@ a{
     flex-wrap: wrap;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     height: 80px;
-    /* position: fixed; */
     position: sticky;
-    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
 }
 
 #top-menu #company-logo, #search-form, #menu-navigation{
@@ -47,13 +46,13 @@ a{
 #logo i, img{ 
     margin: 0;
     display: inline-block;
-    color: #0071dc;
+    color: #15285b;
 }
 #logo h5{
-    letter-spacing: 8px;
+    letter-spacing: 5px;
     margin: 0;
     display: inline-block;
-    color: #0071dc;
+    color: #15285b;
 }
 
 /* SEARCH INPUTS */
@@ -65,7 +64,7 @@ a{
 #search-form form input{
     margin: 0;
     padding: 10px;
-    border: #0071dc solid 1.5px;
+    border: #15285b solid 1.5px;
     height: 100%;
     outline: none;
 }
@@ -82,7 +81,7 @@ input[type=button], input[type=submit], input[type=reset] {
     left: -5px;
     cursor: pointer;
     border-radius: 0 25px 25px 0;
-    background: #0071dc ;
+    background: #15285b ;
     color: #ffffff;
 }
 
@@ -101,11 +100,8 @@ input[type=button], input[type=submit], input[type=reset] {
 /* PROMOTION grids */
 #promotion{
     display: grid;
-    border: solid 1px red;
-    height: 500px;
-    width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 50px 450px 450px 450px;
+    grid-template-rows: 50px 450px;
 }
 
 #promotion #top-navigation, #categories, #slideshow, #promo-ads{
@@ -125,7 +121,6 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 #slideshow{
     grid-column: 2/4;
-    border: solid black 1px;
     position: relative;
 }
 #promo-ads{
@@ -143,7 +138,7 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 /* Grid categories */
 .title-categories{
-    letter-spacing: 3px;
+    /* letter-spacing: 1px; */
     width: 60%;
     margin: 0 auto;
 }
@@ -156,31 +151,46 @@ input[type=button], input[type=submit], input[type=reset] {
     padding: 5px 0;
     width: 100%;
 }
+#categories ul li a{
+    color: #15285b;
+}
 
 /* Slideshow */
 #slideshow img{
     height: 100%;
     width: 100%;
     margin: 0;
+    padding: 5px 0;
 }
-#slideshow a{
+#slideshow span{
     position: absolute;
     top: 50%;
-    /* color: black; */
+    color: #15285b;
     transition: 0.6s ease;
     user-select: none;
 }
+#slideshow span:hover{
+    color: #fff;
+}
 #next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 0 4px 4px 0;
   }
 #prev{
     left: 0;
-    border-radius: 0 3px 3px 0;
+    border-radius: 4px 0 0 4px;
 }
-.prev:hover, .next:hover {
+#prev:hover, #next:hover {
     background-color: rgba(0,0,0,0.8);
   }
+/* PROMOTION */
+#promo-ads{
+    display: grid;
+    /* grid-auto-rows: minmax(100px, auto); */
+}
+.ads{ 
+    border-bottom: 1px solid #15285b;
+}
 
 
 /* MEDIA DEVICE flex*/

@@ -2,13 +2,19 @@ body {
     padding: 2px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   }
+  *{
+    padding: 0;
+    margin: 0;
+  }
   
-  a {
-    color: #00B7FF;
+  a{
+    /* color: #00B7FF; */
+    color: #15285b;
     text-decoration: none;
   }
   a:hover {
-    color: #00B7FF;
+    /* color: #00B7FF; */
+    color: #15285b;
     text-decoration: none;
   }
 
@@ -18,3 +24,50 @@ body {
   * {
     box-sizing: border-box;
   }
+img{
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+  /* FLEEK SECTION */
+#fleek-section{
+  background-color: #f2f3f7;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* border: solid black; */
+  grid-auto-rows: minmax(400px, auto);
+  grid-gap: 20px;
+  padding: 40px;
+}
+
+.fleeks{
+  background-color: #fff;
+}
+.fleeks img{
+  height: 75%;
+  width: 100%;
+}
+
+
+/* GENERAL FOOTER */
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(150px, 200px);
+  grid-gap: 10px;
+  padding: 20px 80px;
+  background-color: #15285b;
+  color: #fff;
+}
+footer .buy, .smartfleek, .services, .help-care, .footer-end{
+  padding: 20px;
+  /* border: solid red 0.4px; */
+}
+.footer-end{
+  grid-column: 1/5;
+}
+footer .buy, .smartfleek, .services, .help-care, .footer-end, ul li a{
+  color: #fff;
+}
