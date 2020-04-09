@@ -1,38 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e383af7a44.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+<%- 
+    include('header');
+-%>
     <link rel="stylesheet" href="css/index.css">
     <title></title>
 </head>
 <body>
-    <div id="top-menu">
-        <div id="company-logo">
-            <div id="logo">
-                <!-- <img src="" alt="Indoors logo"> -->
-                <i class='fas fa-tshirt'></i>
-                <h5 class="title"></h5>
-            </div>
-        </div>
-        <div id="search-form">
-            <form action="" method="GET">
-                <input type="text" name="search_query" id="seach-query" placeholder="Search..">
-                <input type="submit" name="search" value="Search">
-            </form>
-        </div>
-        <div id="menu-navigation">
-            <ul>
-                <li id="sign-in"><i class="fas fa-user"></i> Sign In</li>
-                <li id="orders"><i class="fas fa-briefcase"></i> Orders</li>
-                <li id="message"> <i class="fas fa-comment-dots"></i> Message</li>
-                <li id="cart"><i class="fas fa-cart-plus"></i> Cart</li>
-            </ul>
-        </div>
-    </div>
+    <%- 
+        include('top_nav');
+    -%>
     <div id="promotion">
         <div id="top-navigation">
             <ul>
@@ -71,50 +46,12 @@
     <div id="fleek-section">
         <!-- JS handles the div.fleeks and fleek-image -->
     </div>
-    <footer>
-        <div class="buy">
-            <h6>Buy</h6>
-            <ul>
-                <li><a href="">Registration</a></li>
-                <li><a href="">Stores and Patners</a></li>
-            </ul>
-        </div>
-        <div class="smartfleek">
-            <h6>About</h6>
-            <ul>
-                <li><a href="">About smartfleek</a></li>
-                <li><a href="">Policies</a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </div>
-        <div class="help-care">
-            <h6>Help & Care</h6>
-            <ul>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="Payments"></a></li>
-                <li><a href="Report abuse"></a></li>
-                <li><a href="">Returns</a></li>
-                <li><a href="Store Pick"></a></li>
-            </ul>
-        </div>
-        <div class="services">
-            <h6>Smartfleek services</h6>
-            <ul>
-                <li><a href="">Production services</a></li>
-                <li><a href="">Logistics services</a></li>
-            </ul>
-        </div>
-        <div class="footer-end">
-            <h6>Follow Us</h6>
-            <ul>
-                <li><a href="">instagram</a></li>
-                <li><a href="">facebook</a></li>
-                <li><a href="">youtube</a></li>
-                <li><a href="">twitter</a></li>
-            </ul>
-        </div>
-    </footer>
-    <script src="javascript/allJs.js"></script>
+
+    <!-- Footer -->
+    <%- 
+        include('footer');
+    -%>
+    
     <script src="javascript/index.js"></script>
 </body>
 </html>
