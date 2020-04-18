@@ -22,8 +22,13 @@ app.use(express.json());
 const indexPage = require('./routes/index');
 app.use('/', indexPage);
 
+// Trend Routes
 const trendingPage = require('./routes/trending');
 app.use('/', trendingPage);
+
+// Random Page Route
+const randomPage = require('./routes/page');
+app.use('/', randomPage);
 
 const PORT = 3000 || process.env.PORT;
 app.listen(PORT, ()=>{
