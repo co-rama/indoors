@@ -22,6 +22,14 @@ for(let i =0; i < allTitleTags.length; i++){
     allTitleTags[i].textContent = companyName;
 }
 
-document.querySelector('.title-categories').textContent = companyName + ' market';
+if(document.getElementsByClassName('title-categories') != null){
+    for(let i =0; i < document.getElementsByClassName('title-categories').length; i++){
+        console.log(document.getElementsByClassName('title-categories')[i].textContent = companyName + ' PRODUCTS');
+
+    }
+}
+
+
+
 
 
