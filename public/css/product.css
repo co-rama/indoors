@@ -1,0 +1,15 @@
+.product-upload{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-auto-rows: 600px;
+    padding: 15px;
+    background-color: #f2f3f7;
+}
+
+#product-nav, #product-form{
+    /* border: solid green 1px; */
+    background-color: #fff;
+}
+
+/* #product-nav{
+} */

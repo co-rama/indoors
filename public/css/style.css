@@ -18,6 +18,13 @@ body {
     text-decoration: none;
   }
 
+  input[type=button], input[type=submit], input[type=reset] {
+    border: none;
+    cursor: pointer;
+    background: #15285b ;
+    color: #ffffff;
+}
+
   li{
     list-style: none;
   }

@@ -42,6 +42,12 @@
     padding: 0 10px;
     display: inline-block;
 }
+
+#top-navigation ul li a {
+    /* color: #00B7FF; */
+    color: #15285b;
+    text-decoration: none;
+  }
 /* Grid categories */
 .title-categories{
     /* letter-spacing: 1px; */

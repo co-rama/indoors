@@ -70,14 +70,11 @@
     border-radius: 25px 0 0 25px;
 }
 
-input[type=button], input[type=submit], input[type=reset] {
+#search-form form input[type=button], input[type=submit], input[type=reset]{
     width: 15%;
     position: relative;
     left: -5px;
-    cursor: pointer;
     border-radius: 0 25px 25px 0;
-    background: #15285b ;
-    color: #ffffff;
 }
 
 /* MENU NAVIGATION */
