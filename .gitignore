@@ -6,3 +6,6 @@ package-lock*
 
 # Ignored Images
 public/images
+
+# Ignored env file
+.env
