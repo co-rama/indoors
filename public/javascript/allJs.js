@@ -24,7 +24,7 @@ for(let i =0; i < allTitleTags.length; i++){
 
 if(document.getElementsByClassName('title-categories') != null){
     for(let i =0; i < document.getElementsByClassName('title-categories').length; i++){
-        console.log(document.getElementsByClassName('title-categories')[i].textContent = companyName + ' PRODUCTS');
+        console.log(document.getElementsByClassName('title-categories')[i].textContent = companyName + ' Market');
 
     }
 }

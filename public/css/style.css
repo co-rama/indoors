@@ -38,6 +38,11 @@ img{
 img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
+input{
+  padding: 10px;
+  outline: none;
+  /* border: #15285b solid 1.5px; */
+}
   /* FLEEK SECTION */
 #fleek-section{
   background-color: #f2f3f7;

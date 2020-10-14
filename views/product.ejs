@@ -7,16 +7,25 @@
 <body>
     <div class="product-upload">
         <div id="product-nav">
-            <!-- <h3>Prouduct Navigation Bar</h3> -->
+            <h3>Product Navigation Bar</h3>
         </div>
         <div id="product-form">
-            some random
+            <form action="" method="GET" id="form-product" name="product-form">
+                <legend>Product Specification</legend>
+                <input type="text" name="name" placeholder="Product name">
+                <input type="text" name="brand" placeholder="Brand name">
+                <input type="text" name="" placeholder="">
+                <input type="text" name="" placeholder="">
+                <input type="text" name="" placeholder="">
+                <input type="text" name="" placeholder="">
+                <input type="button" value="+Add product input" id="add_product">
+            </form>
         </div>
     </div>
         <!-- FOOTER SECTION -->
 <%-
     include('footer');
 -%>
-<script src="javascript/trending.js"></script>
+<script src="javascript/product.js"></script>
 </body>
 </html>

@@ -57,11 +57,8 @@
 }
 
 #search-form form input{
-    margin: 0;
-    padding: 10px;
     border: #15285b solid 1.5px;
     height: 100%;
-    outline: none;
 }
 
 #search-form form input[type=text]{
@@ -70,7 +67,7 @@
     border-radius: 25px 0 0 25px;
 }
 
-#search-form form input[type=button], input[type=submit], input[type=reset]{
+#search-form form input[type=submit]{
     width: 15%;
     position: relative;
     left: -5px;

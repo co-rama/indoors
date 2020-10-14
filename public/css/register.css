@@ -2,7 +2,8 @@
     display: grid;
     /* border: solid black; */
     grid-template-columns: 35% 65%;
-    grid-auto-rows: minmax(640px, auto);
+    grid-auto-rows: minmax(770px, auto);
+    /* grid-auto-flow: row; */
 }
 
 .container-1 #register-contents, #cover{

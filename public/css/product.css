@@ -1,15 +1,37 @@
 .product-upload{
     display: grid;
     grid-template-columns: 35% 65%;
-    grid-auto-rows: 600px;
+    grid-auto-rows: minmax(600px, auto);
     padding: 15px;
     background-color: #f2f3f7;
 }
 
-#product-nav, #product-form{
-    /* border: solid green 1px; */
-    background-color: #fff;
+#product-nav{
+    /* background-color: #fff; */
+    color: #ffffff;
+    background-color: black;
 }
 
-/* #product-nav{
-} */
+#product-form{
+    background-color: none;
+}
+
+#form-product{
+    border: solid black 1px;
+    width: 100%;
+    padding: 10px;
+}
+
+#form-product input{
+    width: 60%;
+    margin: 3px auto;
+    height: 40px;
+    /* background-color: green; */
+    outline: none;
+}
+
+#form-product legend{
+    width: 60%;
+    margin: 10px auto;
+    font-style: initial;
+}

@@ -38,9 +38,15 @@ function showSlides(slideNumber){
     }
 }
 
-// setInterval(()=>{
-//     slideNext();
-// }, 5000)
+setInterval(()=>{
+    if(imageDB.slideIndex >= imageDB.image.length){
+        imageDB.slideIndex = 0;
+    }else if(imageDB.slideIndex < 0){
+        imageDB.slideIndex = (imageDB.image.length -1);
+    }else{
+        slideNext();
+    }
+}, 5000)
 
 /*
 **FLEEK IMAGES
